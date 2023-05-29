@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { v4 as uuid } from 'uuid';
 import { Button, Form } from 'react-bootstrap'
 
 export class ContactsForm extends Component {
@@ -7,8 +8,9 @@ export class ContactsForm extends Component {
     super(props)
     this.state = {
       name: '',
-      contact: '',
+      phoneNumber: '',
       location: '',
+      id: uuid(),
     }
   }
   
@@ -22,7 +24,7 @@ export class ContactsForm extends Component {
 
   handleSubmit = (e) => {
       e.preventDefault()
-      // console.log(this.state)
+      console.log(this.state)
       this.props.getData(this.state)
     }
   
@@ -37,7 +39,7 @@ export class ContactsForm extends Component {
       </Form.Group>
       <Form.Group className="mb-3">
         <Form.Label>Phone Number</Form.Label>
-        <Form.Control type="text" placeholder="Enter number" className='input' name="contact" onChange={this.handleChange} />
+        <Form.Control type="text" placeholder="Enter number" className='input' name="phoneNumber" onChange={this.handleChange} />
       </Form.Group>
       <Form.Group className="mb-3">
         <Form.Label>Location</Form.Label>
