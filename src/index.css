@@ -89,7 +89,7 @@ color: black;
   width: 20rem;
 }
 
-.btn{
+.btn1{
   display: flex;
   margin-block: 2rem;
   background-color: rgb(6, 6, 57,0.5);
@@ -117,19 +117,30 @@ border: 1px solid transparent;
 border-radius: 20px;
 }
 
+
+
 .mycontact{
   background-color: rgb(21, 188, 188);
   padding: 1rem;
   border: 1px solid transparent;
   border-radius: 20px;
   margin-top: 2rem;
-  height: 12rem;
-  width: 12rem;
+  height: 17rem;
+  width: 20rem;
   color: black;
+  font-size: 16px;
+ font-weight: 200px;
   }
 
   .mycontacts{
     display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   }
 
+
+.myeditforms{
+  background-color: rgb(21, 188, 188);
+  padding-inline: 5rem;
+  padding-block: 2rem;
+}
